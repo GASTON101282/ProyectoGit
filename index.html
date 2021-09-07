@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+	
+	<!-- Comentario ctrol shif } -->
+	<!-- La disposicion de los elemenros en HTML (Displays)2 tipos: display: inline El elemento solo ocupa el espacio necesarioa lo ancho
+	 display: block: Elemento ocupa todo el espacio
+	 a lo ancho,aunque no ocupe todo -->
+	<meta charset="UTF-8"/>
+	<meta name="description" content="En este Contenido revisaremos algunas etiquetas basicas en HTML">
+	<title>Etiquetas HTML </title>
+	<style>
+		a{ color: sandybrown; }
+		div, h1, h3, h5 
+		{ background: orange;
+			display: block; 
+		}
+		iframe
+		{
+			height: 600px;
+			width: 80%;
+		}
+		/* Pseudo Clase */
+		a:hover
+		{
+			color: rosybrown;
+			font-size: 200%;	
+		}
+		ol { list-style: upper-roman; }
+
+		ul { list-style: square; }
+
+		#estaciones>li: first-child{ background: gray;}
+		span, h2, h4 , h6, img
+		{background: skyblue;
+			display: inline;
+		} 
+		.Listas>li 
+		{ 	border-right: thin solid black;
+			display: inline; 
+		/*padding distancia interna del contenido de la caja*/
+			padding: 0 1em;
+		}
+		.Listas>li:last-child { border: 0; }		
+
+	</style>
+</head>
+		<!-- Bloque Cuerpo de esta Estructura  -->
+<body>
+	<p>
+	Contenido del documento Mi primer pagina
+	diseñada en HTML...
+	</p>
+
+	<!-- Tipos de Etiquetas -->
+	<img src="admin.png" alt="Administrador Image" title="Administrador Image" border="10" width="256" height="256" />
+	<span>Esto es una Span</span>
+	<div id="arriba">Eso es una Div</div>
+	<!-- h${Encabezado de tipo $}*6 -->
+	<h1>Encabezado de tipo 1</h1>
+	<h2>Encabezado de tipo 2</h2>
+	<h3>Encabezado de tipo 3</h3>
+	<h4>Encabezado de tipo 4</h4>
+	<h5>Encabezado de tipo 5</h5>
+	<h6>Encabezado de tipo 6</h6>
+	<p>
+		Esto es un parrafo. Y este texto esta en <b>negrita</b>,
+		 <i>cursiva</i>, <u>subrayado</u>, <strong> Esta parte es 
+		 importante</strong>, <mark> esta parte esta resaltada</mark>,
+		 <em> esto tiene enfasis</em> y estas son <small> letras chiquitas, como los contratos</small>.
+
+	</p>
+	<!-- otro parrafo -->
+	<p>
+		La formula del agua es H<sub>2</sub>0.
+		<BR/> <hr /> <br />	
+		La formula de la Relatividad de Eistein es e = mc <sup>2
+		</sup>.
+
+	</p>
+	<h2>  Listas desordenadas (viñetas)</h2>
+	<ul id="estaciones" class="Listas">
+		<li>Primavera</li>
+		<li>Verano</li>
+		<li>Otoño</li>
+		<li>Invierno</li>
+	</ul>
+
+	<h2>Listas Ordenadas (numeracion)</h2>
+	<ol class="Listas">
+		<li class="Listas">HTML</li>
+		<li class="Listas">CSS</li>
+		<li class="Listas">JS</li>
+		<li class="Listas">AJAX</li>
+		<li class="Listas">PHP</li>
+		<li class="Listas">MySQL</li>
+	</ol>
+	<h2>Listas Multinivel</h2>
+	<ul class="Listas">
+			<li>
+				Fronted:
+				<ol c class="Listas">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JS</li>
+				</ol>
+			</li>
+			<li>
+				Backend:
+				<ol c class="Listas">
+					<li>AJAX</li>
+					<li>PHP</li>
+					<li>MYSQL</li>
+				</ol>
+			</li>
+		</ul>	
+		<!-- Hiperreferencia una pagina web -->
+		<a href="http://www.google.com" target="_blank">Google</a>
+		<!-- <a href="http://w3.org/html/logo"> -->
+		<img src="admin.png" alt="Administrador"/>			
+		</a>
+		<!-- <a href="mailto:j@bextlan.com">j@bextlan.com</a> -->
+		<a href="#arriba">Pa' rriba</a>
+		<BR /></BR />
+		<!-- <iframe src="contenido.pdf" >
+			Tu navegador no soporta IFrame's
+		</iframe> -->
+		<!-- <iframe src="http://cursos.bextlan.com/web"></iframe>	 -->
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/WTGeDwSR6lA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5943.770714655555!2d-65.2645988850478!3d-19.042891573307607!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93fbc8b52d6095d5%3A0x9788e2a0c2adebe2!2sParque%20Sim%C3%B3n%20Bol%C3%ADvar!5e0!3m2!1ses!2sbo!4v1627360210433!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</body>
+</html>
